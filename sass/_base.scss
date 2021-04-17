@@ -1,0 +1,14 @@
+$color-body: rgb(9, 11, 26);
+$color-card: rgb(27, 25, 56);
+$color-accent: rgb(170, 92, 219);
+$color-white: rgb(255, 255, 255);
+$color-paragraph: rgba(255, 255, 255, 0.75);
+$color-stat-label: rgba(255, 255, 255, 0.6);
+
+body {
+  background-color: $color-body;
+  color: $color-white;
+  font-size: 0.9375rem; // 15px
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}

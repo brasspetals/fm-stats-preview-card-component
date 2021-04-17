@@ -1,0 +1,19 @@
+.heading {
+  font-weight: 700;
+}
+
+.paragraph {
+  color: $color-paragraph;
+}
+
+.accent {
+  color: $color-accent;
+}
+
+.statistic {
+  &__label {
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: uppercase;
+    color: $color-stat-label;
+  }
+}
