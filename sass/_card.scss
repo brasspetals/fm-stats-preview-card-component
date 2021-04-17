@@ -1,16 +1,62 @@
-.heading {
-  font-weight: 700;
+.card {
+  background-color: $color-card;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 2rem 0.75rem;
+
+  &__img {
+    position: relative;
+
+    & img {
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: $color-accent;
+    }
+
+    &::before {
+      opacity: 0.24;
+      z-index: 10;
+      filter: saturate(1.2);
+    }
+
+    &::after {
+      mix-blend-mode: multiply;
+    }
+  }
+
+  &__content {
+    background-color: $color-card;
+  }
 }
 
-.paragraph {
-  color: $color-paragraph;
+// Typography
+.heading {
+  font-weight: 700;
 }
 
 .accent {
   color: $color-accent;
 }
 
+.paragraph {
+  color: $color-paragraph;
+}
+
+// Statistics
 .statistic {
+  &__number {
+    font-weight: 700;
+  }
+
   &__label {
     font-family: "Lexend Deca", sans-serif;
     text-transform: uppercase;

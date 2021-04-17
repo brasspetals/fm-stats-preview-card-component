@@ -12,3 +12,20 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

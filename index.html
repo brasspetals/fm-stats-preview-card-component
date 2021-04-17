@@ -24,13 +24,15 @@
   <body>
     <main>
       <div class="card">
-        <picture class="card__img">
-          <source
-            media="(min-width: 650px)"
-            srcset="./images/image-header-desktop.jpg"
-          />
-          <img src="./images/image-header-mobile.jpg" alt="" />
-        </picture>
+        <div class="card__img">
+          <picture>
+            <source
+              media="(min-width: 650px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <img src="./images/image-header-mobile.jpg" alt="" />
+          </picture>
+        </div>
         <div class="card__content">
           <h1 class="heading">
             Get <span class="accent">insights</span> that help your business
@@ -61,7 +63,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Anna</a>.
+        >. Coded by
+        <a href="https://github.com/brasspetals" target="_blank">Anna</a>.
       </div>
     </main>
   </body>
