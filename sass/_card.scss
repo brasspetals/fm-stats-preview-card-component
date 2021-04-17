@@ -11,29 +11,12 @@
 
   &__img {
     position: relative;
+    background-color: $color-accent;
 
     & img {
       width: 100%;
-    }
-
-    &::before,
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: $color-accent;
-    }
-
-    &::before {
-      opacity: 0.27;
-      z-index: 10;
-    }
-
-    &::after {
       mix-blend-mode: multiply;
+      opacity: 0.73;
     }
   }
 
