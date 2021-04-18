@@ -1,8 +1,6 @@
-# Frontend Mentor - Stats preview card component solution
+# Frontend Mentor - Stats Preview Card Component Solution
 
 ![Desktop preview for the stats preview card component challenge](./images/desktop-preview.jpg)
-
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## The challenge
 
@@ -12,7 +10,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/stats-preview-card-scss-grid-css-animations-7SCHf2p0a](https://www.frontendmentor.io/solutions/stats-preview-card-scss-grid-css-animations-7SCHf2p0a)
 - Live Site URL: [https://fm-stats-preview-card-component.vercel.app/](https://fm-stats-preview-card-component.vercel.app/)
 
 ## My process
@@ -20,14 +18,15 @@ Users should be able to:
 ### Built with
 
 - Mobile-first workflow
+- SCSS
 - CSS Grid
-- CSS Keyframe Animation
+- CSS Keyframe Animations
 
 ### What I learned
 
 First time implementing:
 
-- [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) in combo with `opacity` seemed to work perfectly to match the header image design
+- [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) in combo with `opacity` to match the header image design
 - [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) to prevent the animations from playing for those who prefer reduced motion
 
 ### Useful resources
