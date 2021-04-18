@@ -11,20 +11,23 @@ body {
   font-size: 0.9375rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  display: flex;
-  flex-direction: column;
 }
 
-main {
-  flex-grow: 1;
-  display: flex;
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .attribution {
   text-align: center;
-  padding: 0 1.5rem 1.5rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
 
   & a {
     text-decoration: none;
