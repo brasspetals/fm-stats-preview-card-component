@@ -9,6 +9,10 @@
   text-align: center;
   max-width: 405px;
 
+  @media (prefers-reduced-motion: no-preference) {
+    animation: fadeUp 1.2s cubic-bezier(0.11, 1, 0.67, 1.03) backwards;
+  }
+
   @media only screen and (min-width: 950px) {
     max-width: 1110px;
     grid-auto-flow: column;
@@ -75,11 +79,18 @@
   }
 }
 
+.paragraph {
+  color: $color-paragraph;
+  line-height: 1.65;
+  max-width: 23.5rem;
+}
+
+// Header Accent and Desktop Animation
 .accent {
   position: relative;
   color: $color-accent;
 
-  @media only screen and (min-width: 950px) {
+  @media (prefers-reduced-motion: no-preference) {
     overflow: hidden;
     background: linear-gradient(
       to right,
@@ -91,7 +102,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: accentColorFill 0.9s cubic-bezier(0.56, 0.01, 0.36, 1) backwards;
+    animation: accentColorFill 1s cubic-bezier(0.56, 0.01, 0.36, 1) 0.3s
+      backwards;
     background-size: 200%;
     background-position: 0%;
     background-repeat: no-repeat;
@@ -107,13 +119,7 @@
   }
 }
 
-.paragraph {
-  color: $color-paragraph;
-  line-height: 1.65;
-  max-width: 23.5rem;
-}
-
-// Statistic Typography & Animations
+// Statistic Typography & Desktop Animations
 .statistic {
   &__number {
     font-weight: 700;
@@ -129,17 +135,17 @@
     line-height: 1.65;
   }
 
-  @media only screen and (min-width: 950px) {
+  @media only screen and (min-width: 950px) and (prefers-reduced-motion: no-preference) {
     &:nth-child(1) {
-      animation: fadeUp 1.1s cubic-bezier(0.11, 1, 0.67, 1.03) 0.9s backwards;
+      animation: fadeUp 1.2s cubic-bezier(0.11, 1, 0.67, 1.03) 1s backwards;
     }
 
     &:nth-child(2) {
-      animation: fadeUp 1.1s cubic-bezier(0.11, 1, 0.67, 1.03) 1.3s backwards;
+      animation: fadeUp 1.2s cubic-bezier(0.11, 1, 0.67, 1.03) 1.4s backwards;
     }
 
     &:nth-child(3) {
-      animation: fadeUp 1.1s cubic-bezier(0.11, 1, 0.67, 1.03) 1.7s backwards;
+      animation: fadeUp 1.2s cubic-bezier(0.11, 1, 0.67, 1.03) 1.8s backwards;
     }
   }
 }
@@ -147,7 +153,7 @@
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(1.5rem);
   }
   100% {
     opacity: 1;
