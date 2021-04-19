@@ -69,14 +69,14 @@
 // Typography
 .heading {
   font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 1.2;
+  font-size: 1.75rem;
+  line-height: 1.15;
   margin-bottom: 1rem;
-  letter-spacing: 0.03125rem;
 
   @media only screen and (min-width: 950px) {
-    font-size: 2.1875rem;
-    margin-bottom: 0.75rem;
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    line-height: normal;
   }
 }
 
@@ -131,7 +131,7 @@
     color: $color-stat-label;
     font-size: 0.75rem;
     letter-spacing: 0.0625rem;
-    line-height: 1.65;
+    line-height: 1.75;
     display: block;
     font-weight: 400;
   }
