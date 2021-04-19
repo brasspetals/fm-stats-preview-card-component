@@ -122,10 +122,8 @@
 
 // Statistic Typography & Desktop Animations
 .statistic {
-  &__number {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
+  font-weight: 700;
+  font-size: 1.5rem;
 
   &__label {
     font-family: "Lexend Deca", sans-serif;
@@ -134,6 +132,8 @@
     font-size: 0.75rem;
     letter-spacing: 0.0625rem;
     line-height: 1.65;
+    display: block;
+    font-weight: 400;
   }
 
   @media only screen and (min-width: 950px) and (prefers-reduced-motion: no-preference) {
