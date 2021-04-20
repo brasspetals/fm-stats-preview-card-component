@@ -15,6 +15,8 @@ Users should be able to:
 
 ## My process
 
+What started out as a break from a larger project turned into a fun animation experiment! I'll admit I spent an ungodly amount of time messing around with cubic-bezier curves. 😅 The statistics are only animated on the desktop layout, as it felt like a bit too much on mobile.
+
 ### Built with
 
 - Mobile-first workflow
