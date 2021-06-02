@@ -8,6 +8,7 @@
   grid-auto-flow: row;
   text-align: center;
   max-width: 25.3125rem;
+  backface-visibility: hidden;
 
   @media (prefers-reduced-motion: no-preference) {
     animation: fadeUp 1.2s cubic-bezier(0.11, 1, 0.67, 1.03) backwards;
@@ -93,18 +94,11 @@
 
   @media (prefers-reduced-motion: no-preference) {
     overflow: hidden;
-    background: linear-gradient(
-      to right,
-      $color-accent,
-      $color-accent 50%,
-      white 50%,
-      white
-    );
+    background: linear-gradient(to right, $color-accent, $color-accent 50%, white 50%, white);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: accentColorFill 1s cubic-bezier(0.56, 0.01, 0.36, 1) 0.3s
-      backwards;
+    animation: accentColorFill 1s cubic-bezier(0.56, 0.01, 0.36, 1) 0.3s backwards;
     background-size: 200%;
     background-position: 0%;
     background-repeat: no-repeat;
